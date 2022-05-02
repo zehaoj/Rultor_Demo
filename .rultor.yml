@@ -1,6 +1,30 @@
 architect:
   - zehaoj
 
+# assets:
+#   secret.xml: "zehaoj/secret-repo#assets/settings.xml"
+
+# docker:
+#   image: "ubuntu:12.10"
+#   directory: repo/my-docker-image
+#   as_root: true
+
+# env:
+#   MAVEN_OPTS: "-XX:MaxPermSize=256m -Xmx1g"
+
+# install:
+#   - "sudo apt-get install texlive"
+
+# readers:
+#   - "urn:github:526301"
+#   - "urn:github:8086956"
+
+# ssh:
+#   host: test.example.com
+#   port: 22
+#   key: ./keys/id_rsa
+#   login: test
+
 merge:
   commanders:
     - zehaoj
@@ -9,10 +33,17 @@ merge:
     ./gradlew test
     echo "easter egg!"
 
-release:
-  commanders:
-    - zehaoj
+# deploy:
+#   commanders:
+#     - user1
 
-  script: |
-    ./gradlew test
-    git commit -am "${tag}"
+# release:
+#   commanders:
+#     - user2
+
+#   script: |
+#     ./gradlew test
+#     git commit -am "${tag}"
+    
+#   uninstall: |
+  # destroy EC2 instance
