@@ -51,3 +51,6 @@ merge: # or "deploy" or "release"
     - "sudo apt-get install graphviz"
     - "mvn clean install"
 ```
+
+
+More detailed reference about `.rultor.yml` can be found here: https://doc.rultor.com/reference.html
