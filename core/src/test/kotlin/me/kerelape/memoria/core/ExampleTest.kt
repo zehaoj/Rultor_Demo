@@ -8,5 +8,6 @@ class ExampleTest {
     @Test
     fun `testExample`() {
         assertEquals(2, 4)
+
     }
 }
